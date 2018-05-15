@@ -1,3 +1,17 @@
+require "lib/image_helpers"
+
+helpers ImageHelpers
+
+helpers do
+  def custom_page_classes
+    if yield_content(:page_classes) != nil
+      page_classes.gsub("_", "-") + " " + yield_content(:page_classes)
+    else
+      page_classes.gsub("_", "-")
+    end
+  end
+end
+
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
