@@ -1,0 +1,29 @@
+$card-padding-default: 20px;
+$card-padding-large: 50px;
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: $card-padding-default;
+  text-align: left;
+  border: $border-default;
+  border-radius: $border-radius-default;
+  background-color: #ffffff;
+  &__block {
+    padding: $card-padding-default;
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: $text-dark;
+  }
+  &__link {
+    font-size: 1.6rem;
+  }
+}
+.card--large {
+  margin-bottom: $card-padding-large;
+  .card__desc {
+    margin-bottom: 30px;
+  }
+}

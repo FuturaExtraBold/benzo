@@ -1,0 +1,49 @@
+.hamburger {
+  position: relative;
+  display: table-cell;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  &__slices {
+    position: relative;
+    width: 100%;
+    height: 24px;
+  }
+  &__slice {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: all 0.2s ease-in-out;
+    background-color: $color-primary;
+  }
+  &--slice-2,
+  &--slice-3 {
+    top: 11px;
+  }
+  &--slice-4 {
+    top: 22px;
+  }
+  &--opened {
+    z-index: 1000;
+    .hamburger {
+      &--slice-1,
+      &--slice-4 {
+        opacity: 0;
+      }
+      &--slice-1 {
+        transform: translate(0, 12px);
+      }
+      &--slice-4 {
+        transform: translate(0, -12px);
+      }
+      &--slice-2 {
+        transform: rotate(-45deg);
+      }
+      &--slice-3 {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

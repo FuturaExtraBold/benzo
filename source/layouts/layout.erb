@@ -5,10 +5,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag "scripts_head" %>
   </head>
-  <body>
+  <body class="<%= page_classes %>">
     <%= yield %>
     <%= javascript_include_tag "scripts_body" %>
   </body>
