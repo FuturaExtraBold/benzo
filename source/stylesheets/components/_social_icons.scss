@@ -4,9 +4,9 @@
   vertical-align: middle;
   &__icon {
     font-size: 2.4rem;
-    margin: 0 35px 0 0;
+    margin: 0 20px 0 0;
     text-decoration: none;
-    color: #e5e9ed;
+    color: $text-light;
   }
   &__icon:last-child {
     margin: 0;
