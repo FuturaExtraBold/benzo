@@ -1,10 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Middleman" %></title>
+    <meta name="description" content="<%= current_page.data.description || yield_content(:description) %>">
     <%= stylesheet_link_tag "all" %>
   </head>
   <body class="<%= custom_page_classes %>">
