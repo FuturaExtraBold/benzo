@@ -32,10 +32,11 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://benhays.me">
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/stylesheets/all.css">
+    <%= partial "partials/shared/critical_styles" %>
   </head>
   <body class="<%= custom_page_classes %>">
     <%= yield %>
+    <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag "all" %>
   </body>
 </html>
