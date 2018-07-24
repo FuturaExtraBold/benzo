@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Middleman" %></title>
     <meta name="description" content="<%= current_page.data.description || yield_content(:description) %>">
+    <link rel="manifest" href="/manifest.json">
     <%= stylesheet_link_tag "all" %>
   </head>
   <body class="<%= custom_page_classes %>">

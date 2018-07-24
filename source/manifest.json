@@ -1,0 +1,16 @@
+{
+  "short_name": "Ben Hays",
+  "name": "Ben Hays Starting Point",
+  "icons": [
+    {
+      "src": "/images/icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
