@@ -23,6 +23,7 @@ activate :sprockets
 # Root templates
 %w[
   index
+  overwatch
 ].each_with_index do |name|
   proxy "/#{name}.html", "/templates/root/#{name}.html", ignore: true
 end
