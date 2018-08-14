@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title><%= current_page.data.title || "Middleman" %></title>
 <meta name="description" content="<%= current_page.data.description || yield_content(:description) %>">
-<meta name="keywords" content="Ben Hays, Portfolio, Front-End Developer, Starting Point" />
+<meta name="keywords" content="Ben Hays, Portfolio, Front-End Developer, Starting Point"/>
 <meta property="og:url" content="https://benhays.me">
 <meta property="fb:app_id" content="">
 <meta property="og:site_name" content="Ben Hays">
@@ -20,12 +20,16 @@
 <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-icon-192x192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<link rel="canonical" href="https://benhays.me">
+<% if current_page.data.canonical_path %>
+  <link href="<%= config[:canonical] %><%= current_page.data.canonical_path %>" rel="canonical">
+<% else %>
+  <link href="<%= config[:canonical] %><%= current_page.url %>" rel="canonical">
+<% end %>
 <link rel="manifest" href="/manifest.json">

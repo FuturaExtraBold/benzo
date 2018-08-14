@@ -28,6 +28,11 @@ activate :sprockets
   proxy "/#{name}.html", "/templates/root/#{name}.html", ignore: true
 end
 
+# Development
+configure :development do
+  set :canonical, "http://localhost:4567"
+end
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
