@@ -34,6 +34,7 @@ configure :development do
 end
 
 configure :build do
+  set :canonical, "https://benhays.me"
   activate :minify_css
   activate :minify_javascript
   activate :gzip
