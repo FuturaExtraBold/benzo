@@ -5,6 +5,7 @@
   margin-bottom: 20px;
   padding: 6px 1em;
   text-transform: uppercase;
+  border: 1px solid;
   border-radius: 2px;
 }
 .btn--overwatch {
@@ -16,13 +17,28 @@
 }
 .btn--primary {
   color: #262626;
+  border-color: #ff9c00;
   background-color: #ff9c00;
+}
+.btn--primary:hover {
+  border-color: #ffb033;
+  background-color: #ffb033;
 }
 .btn--secondary {
   color: #333333;
+  border-color: transparent;
   background-color: #ffffff;
+}
+.btn--secondary:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
 }
 .btn--tertiary {
   color: #ffffff;
   background-color: #00a5e2;
+}
+.btn--tertiary:hover {
+  background-color: #0cbdff;
 }
