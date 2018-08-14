@@ -18,7 +18,13 @@ page '/*.txt', layout: false
 
 activate :asset_hash
 activate :directory_indexes
-activate :sprockets
+
+# Root templates
+%w[
+  index
+].each_with_index do |name|
+  proxy "/#{name}.html", "/templates/root/#{name}.html", ignore: true
+end
 
 configure :build do
   activate :minify_css
