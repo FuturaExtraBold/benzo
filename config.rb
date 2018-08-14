@@ -18,6 +18,7 @@ page '/*.txt', layout: false
 
 activate :asset_hash
 activate :directory_indexes
+activate :sprockets
 
 # Root templates
 %w[
