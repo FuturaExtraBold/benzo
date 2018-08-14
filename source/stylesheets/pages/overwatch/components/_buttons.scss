@@ -1,0 +1,20 @@
+@mixin overwatch-button-common-styles {
+  font-family: "Futura", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 6px 1em;
+  text-transform: uppercase;
+}
+.btn--overwatch {
+  margin-bottom: 0;
+  @include overwatch-button-common-styles;
+}
+.btn--primary {
+  color: #fefefe;
+  background-color: #ff9c00;
+}
+.btn--secondary {
+  color: #333333;
+  background-color: #ffffff;
+}
