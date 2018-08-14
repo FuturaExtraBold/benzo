@@ -24,6 +24,7 @@ activate :sprockets
 %w[
   index
   overwatch
+  wow
 ].each_with_index do |name|
   proxy "/#{name}.html", "/templates/root/#{name}.html", ignore: true
 end
