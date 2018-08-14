@@ -5,10 +5,14 @@
   margin-bottom: 20px;
   padding: 6px 1em;
   text-transform: uppercase;
+  border-radius: 2px;
 }
 .btn--overwatch {
   margin-bottom: 0;
   @include overwatch-button-common-styles;
+}
+.btn--large {
+  font-size: 2.0rem;
 }
 .btn--primary {
   color: #fefefe;
@@ -17,4 +21,8 @@
 .btn--secondary {
   color: #333333;
   background-color: #ffffff;
+}
+.btn--tertiary {
+  color: #ffffff;
+  background-color: #00a5e2;
 }
