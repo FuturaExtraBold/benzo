@@ -16,9 +16,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-activate :asset_hash
 activate :directory_indexes
-activate :sprockets
+activate :asset_hash
 
 # Root templates
 %w[
