@@ -17,7 +17,7 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 
 activate :directory_indexes
-activate :asset_hash
+# activate :asset_hash
 
 # Root templates
 %w[
