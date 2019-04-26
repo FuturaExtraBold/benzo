@@ -1,3 +1,4 @@
+console.log("clients!");
 const clients = [
   {
     id: "1",
@@ -208,7 +209,7 @@ const clients = [
 
 const Client = (props) => {
   return (
-    <img src={ "/images/clients/" + props.img } alt={ props.alt } />
+    <img data-src={ "/images/clients/" + props.img } alt={ props.alt } />
   );
 };
 
