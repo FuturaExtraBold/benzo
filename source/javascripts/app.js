@@ -230,13 +230,7 @@ const Clients = (props) => {
   );
 }
 
-const App = (props) => {
-  return (
-    <Clients clients={ props.clients } />
-  );
-}
-
 ReactDOM.render(
-  <App clients={ clients } />,
-  document.getElementById("root")
+  <Clients clients={ clients } />,
+  document.getElementById("clients")
 );
