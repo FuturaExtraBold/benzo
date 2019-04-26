@@ -17,13 +17,11 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 
 activate :directory_indexes
-# activate :asset_hash
+activate :asset_hash, :exts => [".css", ".js"]
 
 # Root templates
 %w[
   index
-  overwatch
-  wow
 ].each_with_index do |name|
   proxy "/#{name}.html", "/templates/root/#{name}.html", ignore: true
 end
