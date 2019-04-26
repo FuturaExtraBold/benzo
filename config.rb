@@ -12,9 +12,9 @@ helpers do
   end
 end
 
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
 
 activate :directory_indexes
 activate :asset_hash
@@ -39,6 +39,6 @@ configure :build do
   activate :minify_javascript
   activate :gzip
   activate :autoprefixer do |config|
-    config.browsers = ['last 3 versions', 'Explorer >= 10']
+    config.browsers = ["last 3 versions", "Explorer >= 10"]
   end
 end
